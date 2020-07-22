@@ -37,3 +37,20 @@ def compare_salary(list_tuple):
 
 result_tuple = compare_salary([('A',100),('B',500), ('C', 300), ('D', 200)])
 print(result_tuple)
+
+#function skyLine - even UPPERCASE, odd lowercase
+def myfunc(testStr):
+    mylist = []
+    for index in range(0, len(testStr)):
+        if(index%2==0):
+            mylist.append(testStr[index].upper())
+        else:
+            mylist.append(testStr[index].lower())
+    return ConvertToString(mylist)
+
+def ConvertToString(liststr):
+    resultStr =''
+    return resultStr.join(liststr)  
+
+
+print(myfunc("Mississipi"))
