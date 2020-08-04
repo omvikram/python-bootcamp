@@ -10,7 +10,8 @@ for words in ls:
 
 # # #Use range() to print all the even numbers from 0 to 10.
 for i in range(11):
-    print(i)
+    if(i%2 == 0):
+        print(i)
 
 # # #Use a List Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.
 for i in range(1,50):
